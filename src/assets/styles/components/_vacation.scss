@@ -1,0 +1,16 @@
+.vacation {
+  margin-top: 150px;
+  margin-bottom: 2em;
+
+  @media (max-width:575px) {
+    margin-top: 290px;
+
+  }
+
+  &__heading {
+    color: $blackColor;
+    text-align: center;
+    font-family: 'KeplerStd-BoldDisp';
+    margin-bottom: 1rem;
+  }
+}

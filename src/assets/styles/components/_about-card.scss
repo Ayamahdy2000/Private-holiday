@@ -1,0 +1,33 @@
+.about-card {
+    &__icons {
+        position: relative;
+    }
+
+    &__bg {
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        display: flex;
+    }
+
+    &__img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__heading {
+        margin-top: 16px;
+        font-family: 'KeplerStd-BoldDisp';
+        font-size: 24px;
+        color: $blackColor;
+    }
+
+    &__text {
+        font-family: 'Nova';
+        color: $textColor;
+        font-size: 16px;
+    }
+
+}

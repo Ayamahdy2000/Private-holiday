@@ -1,0 +1,12 @@
+.btn-button{
+    border-radius: 20px ;
+    padding: 0.375rem 29px ;
+    border: none;
+    &:focus{
+        box-shadow: none ;
+    }
+    &.bg-danger{
+        color: #fff ;
+    }
+}
+

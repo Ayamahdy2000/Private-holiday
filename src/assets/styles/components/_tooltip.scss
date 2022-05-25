@@ -1,0 +1,14 @@
+.tooltip-inner {
+    background-color: $textColor !important;
+    border-radius: 0px !important;
+    font-family: 'Nova' !important;
+
+}
+
+.tooltip-arrow {
+    &::before {
+
+        border-right-color: $textColor !important;
+    }
+
+}

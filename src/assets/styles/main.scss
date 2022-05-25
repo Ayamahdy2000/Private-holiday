@@ -1,0 +1,37 @@
+@import "bootstrap/scss/bootstrap";
+
+@import "./abstract/variable";
+@import "./abstract/fonts";
+@import "./abstract/mixins";
+@import "./abstract/extends";
+@import "./components/button";
+@import "./components/tooltip";
+@import "./components/navbar";
+@import "./components/header";
+@import "./components/multi-select";
+@import "./components/input";
+@import "./components/vacation";
+@import "./components/swiper";
+@import "./components/vacation-card";
+@import "./components/holiday";
+@import "./components/holiday-card";
+@import "./components/about";
+@import "./components/about-card";
+@import "./components/contact";
+
+@import "./components/footer";
+
+.ml-auto {
+    margin-left: auto;
+}
+
+body {
+    @include fluid-type($min_width, $max_width, $min_font, $max_font);
+    background-color: #ECF0F1 !important;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.pointer {
+    cursor: pointer;
+}

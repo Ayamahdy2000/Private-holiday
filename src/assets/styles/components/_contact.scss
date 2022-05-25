@@ -1,0 +1,42 @@
+.contact {
+    margin-top: 70px;
+    position: relative;
+    width: 100%;
+    height: 570px;
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom right;
+    }
+
+    &__bg-form {
+        background: #fff;
+        width: 390px;
+        // height: 400px;
+        position: absolute;
+        bottom: 0;
+        right: 10%;
+        padding: 20px 30px;
+
+        //    @media (max-width:992px) {
+        //        bottom: auto;
+        //        top:60px;
+        //    }
+        @media (max-width:480px) {
+
+            right: auto;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 300px;
+        }
+    }
+
+    &__heading {
+        color: $blackColor;
+
+        font-family: 'KeplerStd-BoldDisp';
+        margin-bottom: 1rem;
+    }
+}

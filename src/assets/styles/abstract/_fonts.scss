@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Nova';
+    src: url(~assets/fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Nova-bold';
+    src: url(~assets/fonts/Montserrat/Montserrat-Medium.ttf);
+
+}
+@font-face {
+    font-family: 'KeplerStd-BoldDisp';
+    src: url(~assets/fonts/KeplerStd-BoldDisp.otf);
+}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('~assets/fonts/icomoon.eot?2k156o');
+    src:  url('~assets/fonts/icomoon.eot?2k156o#iefix') format('embedded-opentype'),
+      url('~assets/fonts/icomoon.ttf?2k156o') format('truetype'),
+      url('~assets/fonts/icomoon.woff?2k156o') format('woff'),
+      url('~assets/fonts/icomoon.svg?2k156o#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-arrow-right2:before {
+    content: "\ea3c";
+  }
+  .icon-circle-down:before {
+    content: "\ea43";
+  }
+  

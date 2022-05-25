@@ -1,0 +1,10 @@
+.about {
+    margin-top: 80px;
+
+    &__heading {
+        color: $blackColor;
+        text-align: center;
+        font-family: 'KeplerStd-BoldDisp';
+        margin-bottom: 1rem;
+    }
+}
