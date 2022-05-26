@@ -15,7 +15,7 @@
     "core-js": "^3.8.3",
     "node-sass": "^6.0.1",
     "sass-loader": "^10.2.0",
-    "swiper": "^8.1.5",
+    "swiper": "^8.1.6",
     "v-calendar": "^3.0.0-alpha.8",
     "vue": "^3.2.13",
     "vue-awesome-swiper": "^5.0.1",

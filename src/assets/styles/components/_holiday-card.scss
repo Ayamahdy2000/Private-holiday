@@ -35,6 +35,8 @@
         font-family: 'Nova';
         font-size: 16px;
         color: $textColor;
+        max-height: 100px;
+        overflow: hidden;
     }
 
     &__package-num {

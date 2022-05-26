@@ -103,19 +103,8 @@ export default {
         "3 Bedrooms",
         "4 Bedrooms",
         "5 Bedrooms",
-        "1 Bedrooms",
-        "2 Bedrooms",
-        "3 Bedrooms",
-        "4 Bedrooms",
-        "5 Bedrooms",
-        "1 Bedrooms",
-        "2 Bedrooms",
-        "3 Bedrooms",
-        "4 Bedrooms",
-        "5 Bedrooms",
       ],
       attrs: {
-        order: 122222,
         highlight: "green",
       },
     });
@@ -128,7 +117,6 @@ export default {
     };
 
     const v$ = useVuelidate(rules, state);
-
     return { state, v$ };
   },
   data() {
