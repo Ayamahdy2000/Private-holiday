@@ -41,9 +41,6 @@
     background: $textColor;
 }
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-    top: 0;
-    left: 0;
-    width: 100%;
-    /* display: none; */
+  
     height: 10px;
 }
