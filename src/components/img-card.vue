@@ -1,12 +1,29 @@
 <template>
-  <img v-lazyload class="image__item" :data-url="source" :alt="altImg" />
+    <img ref="lazyRef" :alt="altImg" :class="className" />
 </template>
 <script>
-import  lazyload from "../directives/LazyLoadDirective";
+import { ref } from "vue";
+import { useLazyload } from "vue3-lazyload";
 export default {
-  props: ["source", "altImg"],
-  directives: {
-    lazyload : lazyload,
+  props: ["source", "altImg" ,"className"],
+  setup(props) {
+    const src = ref(props.source);
+    const lazyRef = useLazyload(src, {
+      lifecycle: {
+        loading: () => {
+          console.log("loading");
+        },
+        error: () => {
+          console.log("error");
+        },
+        loaded: () => {
+          console.log("loaded");
+        },
+      },
+    });
+    return {
+      lazyRef,
+    };
   },
 };
 </script>

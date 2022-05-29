@@ -7,6 +7,7 @@
     <About />
     <Contact />
     <Footer />
+    
   </div>
 </template>
 <!-- Start Script  -->

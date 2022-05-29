@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-xl-6 col-lg-5 col-sm-6">
         <div class="holiday-card__main-img">
-          <img :src="mainImg" alt="main img" class="img-fluid pointer" />
+          <Image :key="mainImgIndex" :source="mainImg" altImg="main img" className="img-fluid pointer" />
         </div>
         <div class="holiday-card__sub-imgs d-flex">
           <div
@@ -12,7 +12,7 @@
             :key="index"
             @click="getMainImg(img)"
           >
-            <img :src="img" alt="holiday images" />
+            <Image :key="imageIndex" :source="img" altImg="holiday images" />
           </div>
         </div>
       </div>
@@ -86,7 +86,9 @@ the shade of a palm tree or let the sun perform its golden magic on your skin wh
 <!-- Start Script -->
 <script>
 import { Tooltip } from "bootstrap";
+import Image from "./img-card.vue"
 export default {
+  components:{Image},
   mounted() {
     new Tooltip(this.$refs.bed);
     new Tooltip(this.$refs.bath);
@@ -96,6 +98,8 @@ export default {
   },
   data() {
     return {
+      mainImgIndex:0,
+      imageIndex:0,
       images: [
         require("@/assets/images/swiper1.png"),
         require("@/assets/images/swiper2.png"),
@@ -118,6 +122,8 @@ export default {
       this.images.push(this.mainImg);
       this.mainImg = img;
       this.removeMainImg();
+      this.mainImgIndex++;
+      this.imageIndex++;
     },
   },
 };

@@ -4,11 +4,9 @@
       <header>
         <h2 class="vacation__heading">See latest vacation ideas</h2>
       </header>
-
       <main>
         <Swiper
           :items="15"
-          :swiperOptions="swiperVacationOptions"
           :numOfRows="1"
           :slidesPerView="slidesPerView"
           :slidesPerGroup="slidesPerGroup"

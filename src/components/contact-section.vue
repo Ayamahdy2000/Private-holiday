@@ -1,9 +1,9 @@
 <template>
   <section class="contact">
-    <img
-      :src="require('@/assets/images/contact.png')"
-      alt="contact image"
-      class="contact__img"
+    <Img
+      :source="require('@/assets/images/contact.png')"
+      altImg="contact image"
+      className="contact__img"
     />
 
     <div>
@@ -17,7 +17,8 @@
 <!-- Start Script -->
 <script>
 import contactForm from "./contact-form.vue";
+import Img from "./img-card.vue"
 export default {
-  components: { contactForm },
+  components: { contactForm ,Img},
 };
 </script>

@@ -83,7 +83,7 @@ import { required } from "@vuelidate/validators";
 import multiselect from "vue-multiselect";
 import { reactive } from "vue";
 import { DatePicker } from "v-calendar";
-import "v-calendar/dist/style.css";
+// import "v-calendar/dist/style.css";
 export default {
   components: { multiselect, DatePicker },
   setup() {
@@ -98,6 +98,11 @@ export default {
       },
       countries: ["Egypt", "South Korea", "USA"],
       bedrooms: [
+        "1 Bedrooms",
+        "2 Bedrooms",
+        "3 Bedrooms",
+        "4 Bedrooms",
+        "5 Bedrooms",
         "1 Bedrooms",
         "2 Bedrooms",
         "3 Bedrooms",

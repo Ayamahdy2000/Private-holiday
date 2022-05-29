@@ -4,7 +4,7 @@
       <Img
         :source="require('@/assets/images/header.png')"
         altImg="header image"
-        class="header__img"
+        className="header__img"
       />
     </div>
     <h1 class="header__text">enjoy freedom land</h1>

@@ -1,15 +1,15 @@
 <template>
   <article class="about-card">
     <div class="about-card__icons">
-      <img
-        :src="require('@/assets/images/about.png')"
-        alt="card image"
-        class=" about-card__bg"
+      <Img
+        :source="require('@/assets/images/about.png')"
+        altImg="card image"
+        className=" about-card__bg"
       />
-      <img
-        :src="require('@/assets/images/about2.png')"
-        alt="card image"
-        class=" about-card__img"
+      <Img
+        :source="require('@/assets/images/about2.png')"
+        altImg="card image"
+        className=" about-card__img"
       />
     </div>
     <h3 class="text-center about-card__heading">Tailor-Made Packages</h3>
@@ -20,3 +20,9 @@
     </p>
   </article>
 </template>
+<script>
+import Img from "./img-card.vue"
+export default {
+  components:{Img}
+}
+</script>
