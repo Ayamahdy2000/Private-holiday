@@ -1,5 +1,6 @@
 .swiper {
-    z-index: 1;
+
+
 }
 
 .swiper-grid {
@@ -15,7 +16,7 @@
 .swiper-wrapper {
     margin-top: 45px !important;
 }
-.swiper-slide-active{z-index:999}
+
 
 .swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
@@ -39,6 +40,7 @@
 
 .swiper-pagination-bullet-active {
     background: $textColor;
+
 }
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
   

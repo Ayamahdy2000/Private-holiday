@@ -1,11 +1,15 @@
 <template>
   <swiper
     :modules="modules"
-    :breakpoints="swiperOptions.breakpoints"
+    :slidesPerView="slidesPerView"
+    :slidesPerGroup="slidesPerGroup"
+    :spaceBetween="spaceBetween"
     :touchStartPreventDefault="false"
     :pagination="{ clickable: true }"
     :preventClicks="false"
     :preventClicksPropagation="false"
+    :observer="true"
+    :observeParents="true"
     :grid="{
       rows: numOfRows,
     }"
@@ -22,9 +26,17 @@ import { Grid, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/grid";
 import "swiper/css/pagination";
-
+window.onresize = function () {
+  this.swiperOptions;
+};
 export default {
-  props: ["swiperOptions", "numOfRows", "items"],
+  props: [
+    "slidesPerView",
+    "slidesPerGroup",
+    "spaceBetween",
+    "numOfRows",
+    "items",
+  ],
   components: { Swiper, SwiperSlide },
   setup() {
     return {

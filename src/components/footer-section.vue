@@ -39,7 +39,7 @@
           <ul class="footer__list">
             <li class="footer__item">Popular destinations</li>
             <div class="row">
-              <div class="col-6">
+              <ul class="col-6 footer__sub-list">
                 <li class="footer__item">Leh-Ladakh</li>
                 <li class="footer__item">Manali</li>
                 <li class="footer__item">Ooty</li>
@@ -48,8 +48,8 @@
                 <li class="footer__item">Goa</li>
                 <li class="footer__item">Mahabaleshwar</li>
                 <li class="footer__item">Agra</li>
-              </div>
-              <div class="col-6">
+              </ul>
+              <ul class="col-6 footer__sub-list">
                 <li class="footer__item">Coorg</li>
                 <li class="footer__item">Mysore</li>
                 <li class="footer__item">Gir</li>
@@ -58,7 +58,7 @@
                 <li class="footer__item">Kodaikanal</li>
                 <li class="footer__item">Andaman</li>
                 <li class="footer__item">Shimla</li>
-              </div>
+              </ul>
             </div>
           </ul>
         </section>

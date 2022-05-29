@@ -1,9 +1,9 @@
 <template>
   <header class="header mb-5">
     <div class="inner">
-      <img
-        :src="require('@/assets/images/header.png')"
-        alt="header image"
+      <Img
+        :source="require('@/assets/images/header.png')"
+        altImg="header image"
         class="header__img"
       />
     </div>
@@ -18,7 +18,8 @@
 <!-- Start Script -->
 <script>
 import Form from "./form-header.vue";
+import Img from "./img-card.vue"
 export default {
-  components: { Form },
+  components: { Form ,Img },
 };
 </script>

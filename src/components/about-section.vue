@@ -5,7 +5,13 @@
         <h2 class="about__heading">Why we are different</h2>
       </header>
       <main>
-        <Swiper :items="15" :swiperOptions="swiperOptionsAbout" :numOfRows="1">
+        <Swiper
+          :items="15"
+          :slidesPerView="slidesPerView"
+          :slidesPerGroup="slidesPerGroup"
+          :spaceBetween="spaceBetween"
+          :numOfRows="1"
+        >
           <template v-slot:cards> <aboutCard /></template>
         </Swiper>
       </main>
@@ -18,37 +24,21 @@ import Swiper from "./swiper-card.vue";
 import aboutCard from "./about-card.vue";
 export default {
   components: { Swiper, aboutCard },
+  mounted() {
+    const lgScreen = matchMedia("(min-width: 992px)");
+    lgScreen.addEventListener("change", (e) =>
+      e.matches ? (this.slidesPerView = 3) : (this.slidesPerView = 2)
+    );
+    const smallScreen = matchMedia("(max-width:640px)");
+    smallScreen.addEventListener("change", (e) =>
+      e.matches ? (this.slidesPerView = 1) : (this.slidesPerView = 2)
+    );
+  },
   data() {
     return {
-      swiperOptionsAbout: {
-        breakpoints: {
-          1200: {
-            slidesPerView: 3,
-            slidesPerGroup: 3,
-            spaceBetween: 50,
-          },
-          1149: {
-            slidesPerView: 2,
-            slidesPerGroup: 2,
-            spaceBetween: 50,
-          },
-          768: {
-            slidesPerView: 2,
-            slidesPerGroup: 2,
-            spaceBetween: 50,
-          },
-          640: {
-            slidesPerView: 1,
-            slidesPerGroup: 1,
-            spaceBetween: 50,
-          },
-          320: {
-            slidesPerView: 1,
-            slidesPerGroup: 1,
-            spaceBetween: 15,
-          },
-        },
-      },
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 24,
     };
   },
 };

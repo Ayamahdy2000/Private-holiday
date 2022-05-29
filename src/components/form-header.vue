@@ -3,7 +3,7 @@
     <div class="row align-items-center">
       <div class="col-lg-11 col-md-11 col-sm-11">
         <div class="row">
-          <div class="col-lg-3 mt-1 mb-1 col-md-3 col-sm-6 orders-1">
+          <div class="col-lg-3 mt-1 mb-1 col-md-6 col-sm-6 orders-1">
             <multiselect
               v-model="state.formData.country"
               placeholder="Country"
@@ -15,7 +15,7 @@
               country is required
             </div>
           </div>
-          <div class="col-lg-6 mt-1 mb-1 col-md-6 col-sm-12 orders-3">
+          <div class="col-lg-6 mt-1 mb-1 col-md-12 col-sm-12 orders-3">
             <DatePicker
               v-model="state.formData.range"
               is-range
@@ -54,7 +54,7 @@
             </DatePicker>
           </div>
 
-          <div class="col-lg-3 mt-1 mb-1 col-md-3 col-sm-6 orders-2">
+          <div class="col-lg-3 mt-1 mb-1 col-md-6 col-sm-6 orders-2">
             <multiselect
               v-model="state.formData.bedroom"
               placeholder="Bedrooms"
