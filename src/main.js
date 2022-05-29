@@ -12,5 +12,4 @@ app.use(VueLazyLoad, {
 
 
 })
-app.mount('#app')
 createApp(App).mount('#app')

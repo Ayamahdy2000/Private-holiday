@@ -9,17 +9,7 @@ export default {
   setup(props) {
     const src = ref(props.source);
     const lazyRef = useLazyload(src, {
-      lifecycle: {
-        loading: () => {
-          console.log("loading");
-        },
-        error: () => {
-          console.log("error");
-        },
-        loaded: () => {
-          console.log("loaded");
-        },
-      },
+   
     });
     return {
       lazyRef,
