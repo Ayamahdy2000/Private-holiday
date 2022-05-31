@@ -51,6 +51,7 @@
         transform: translateX(-50%);
         bottom: -90px;
         padding: 10px 30px;
+        z-index: 1000000000000;
 
         @media (max-width:575px) {
             bottom: -230px;

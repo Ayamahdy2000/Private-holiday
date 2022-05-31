@@ -15,6 +15,12 @@
           <template v-slot:cards><vacationCard /></template>
         </Swiper>
       </main>
+      <!-- <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
+        corporis rerum tempora, laudantium ab obcaecati est voluptatem ipsa,
+        illum eveniet magni magnam assumenda explicabo dolores quisquam ipsum
+        unde itaque dolor!
+      </div> -->
     </div>
   </section>
 </template>
